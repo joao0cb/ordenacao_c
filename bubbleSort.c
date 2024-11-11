@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define TAM 10000000
+#define TAM 250000
 
 void bubbleSort(int v[], int tam);
 void preencherVetorAleatorio(int v[], int tam);
@@ -57,6 +57,7 @@ void bubbleSort(int v[], int tam) {
                 int aux = v[i];
                 v[i] = v[i+1];
                 v[i+1] = aux;
+                trocou = 1;
             }
         }
         if(!trocou) {
